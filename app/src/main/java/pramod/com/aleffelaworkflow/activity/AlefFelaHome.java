@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import pramod.com.aleffelaworkflow.R;
+import pramod.com.aleffelaworkflow.adapter.VideoListAdapter;
 
 public class AlefFelaHome extends AppCompatActivity {
 
@@ -17,7 +18,7 @@ public class AlefFelaHome extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                final Intent mainIntent = new Intent(getApplicationContext(), VideoCategoryActivity.class);
+                final Intent mainIntent = new Intent(getApplicationContext(), VideoListActivity.class);
                 startActivity(mainIntent);
                 finish();
             }

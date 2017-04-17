@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.VideoCategoryActivity" />
-        <activity android:name=".activity.VideoListActivity"></activity>
+        <activity android:name=".activity.VideoListActivity" />
+        <activity android:name=".activity.VideoSelectedActivity"></activity>
     </application>
 
 </manifest>

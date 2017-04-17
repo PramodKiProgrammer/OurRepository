@@ -29,8 +29,7 @@ public class VideoListActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-        videoDatas = new ArrayList<>();
-        prepareViewData();
+        videoDatas = VideoData.prepareViewData();
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
 
@@ -42,34 +41,5 @@ public class VideoListActivity extends AppCompatActivity {
 
     }
 
-    public void prepareViewData() {
 
-        int[] video = new int[]{R.drawable.akshay, R.drawable.ameer, R.drawable.imran, R.drawable.salman};
-
-        VideoData videoData;
-
-        videoData = new VideoData(video[0], "Rustom", "Tere Sang Yara");
-        videoDatas.add(videoData);
-
-        videoData = new VideoData(video[1], "Dangal", "Dhaakad");
-        videoDatas.add(videoData);
-
-        videoData = new VideoData(video[2], "Crook", "Challa");
-        videoDatas.add(videoData);
-
-        videoData = new VideoData(video[3], "Sultan", "Jag Ghoomeya");
-        videoDatas.add(videoData);
-
-        videoData = new VideoData(video[0], "Rustom", "Tere Sang Yara");
-        videoDatas.add(videoData);
-
-        videoData = new VideoData(video[1], "Dangal", "Dhaakad");
-        videoDatas.add(videoData);
-
-        videoData = new VideoData(video[2], "Crook", "Challa");
-        videoDatas.add(videoData);
-
-        videoData = new VideoData(video[3], "Sultan", "Jag Ghoomeya");
-        videoDatas.add(videoData);
-    }
 }
